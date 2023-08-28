@@ -1,0 +1,111 @@
+:root {
+    --ink-color: #ffffffde;
+    --background-color: #242424;
+
+    --link-color: #646cff;
+    --link-color-hover: #535bf2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+
+    color: var(--ink-color);
+    background-color: var(--background-color);
+}
+
+#root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: var(--ink-color);
+    background-color: var(--background-color);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+
+    position: relative;
+}
+
+.jeopardy {
+    gap: 1px;
+    display: grid;
+
+    text-align: center;
+}
+
+.jeopardy__cell {
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.2rem;
+
+    outline: 1px solid var(--ink-color);
+}
+
+.jeopardy__cell--header {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.jeopardy__cell--category {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.jeopardy__question-button {
+    cursor: pointer;
+
+    color: var(--link-color);
+}
+
+.jeopardy__question-button:hover {
+    color: var(--link-color-hover);
+}
+
+.jeopardy__question {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 1rem;
+
+    border: 1px solid var(--ink-color);
+
+    background-color: var(--background-color);
+
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.jeopardy__question-text {
+    font-size: 2.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -20,7 +20,6 @@ type Categories = Category[];
 
 export const ValuesForPrint = [Values.One_hundred, Values.Two_hundred, Values.Three_hundred, Values.Five_hundred];
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const categories: Categories = [
     {
         name: 'VtM',
